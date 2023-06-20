@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Breakout Game</title>
+  </head>
+  <body>
+    <h1>Breakout Game </h1>
+    <div class="startBtn">
+        <button onclick="startGame();" id="strbtn">
+          <img src="play.png" alt="pause" class="img-button" id="playImage">
+        </button>
+        <button  id="pausebtn" style="display: none;">
+          <img src="pause.png" alt="pause" class="img-button" id="pauseImage">
+         </button>
+         <button id="restartBtn" style="background-color: green;padding: 5px; display: none;" >Restart</button>
+     </div>  
+     <div class="message" style="position: absolute;left: 40%; top: 60%;color: blanchedalmond; font-size: 18px; font-family: Arial, Helvetica, sans-serif;">
+      <p id="msg" style=" z-index: 99; text-shadow: 2px 3px gray;"></p>
+     </div>
+    <div class="container">
+
+    <canvas id="gameWindow" width="650" height="450" style="display: none;"></canvas>
+ </div>
+    <script src="script.js"></script>
+  </body>
+</html>
